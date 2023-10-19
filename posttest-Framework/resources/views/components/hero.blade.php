@@ -11,7 +11,9 @@
     </div>
    <div class=" h-[500px] w-full flex justify-center ">
         <button class="top-80 justify-items-center px-2 py-2 text-center text-sm -z-50 font-semibold text-white rounded-md absolute w-32 border-2 border-white">
-           LOGIN
+            <a href="{{ route('login') }}">
+                LOGIN
+            </a>
         </button>
    </div>
 

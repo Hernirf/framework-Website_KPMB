@@ -6,9 +6,4 @@
     @include('components.depart')
     @include('components.dokumentasi')
     @include('components.footer')
-
-
-
-
-
 @endsection

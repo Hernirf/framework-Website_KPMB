@@ -8,8 +8,10 @@
         <li><a href="">Dokumentasi</a></li>
         <li><a href="">KPMB Mart</a></li>
         <li class="px-5">
-                <button class=" top-4 justify-items-center px-1 py-2 text-center text-sm font-semibold text-black rounded-md absolute w-20 border-2 bg-blue-200">
-                   LOGIN
+                <button class=" top-4 justify-items-center px-1 py-2 text-center text-sm font-semibold text-black rounded-md absolute w-20 border-2 bg-blue-200" >
+                  <a href="{{ route('login') }}">
+                    LOGIN
+                  </a>
                 </button>
         </li>
 

@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Anggota;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -34,4 +36,23 @@ Route::get('/', function () {
     ]
     ]);
 })->name('landing');
+
+
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
+
+Route::get('/anggota', function () {
+    return view('anggota',[
+        "anggota" => Anggota::all()
+        ]
+);
+})->name('anggota');
+
+
+
 

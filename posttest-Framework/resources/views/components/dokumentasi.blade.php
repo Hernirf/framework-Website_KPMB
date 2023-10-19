@@ -8,10 +8,10 @@
 
         <img src="{{asset('assets/img/fotoKPMB.jpg')}}" alt="" class="rounded-lg h-full w-full">
         <img src="{{asset('assets/img/foto1.jpg')}}" alt="" class="rounded-lg h-full w-full brightness-50 -z-20">
-        <img src="{{asset('assets/img/foto2.jpg')}}" alt="" class="rounded-lg h-full w-full">
-        <img src="{{asset('assets/img/foto1.jpg')}}" alt="" class="rounded-lg h-full w-full brightness-50">
-        <img src="{{asset('assets/img/foto2.jpg')}}" alt="" class="rounded-lg h-full w-full">
-        <img src="{{asset('assets/img/fotoKPMB.jpg')}}" alt="" class="rounded-lg h-full w-full">
+        <img src="{{asset('assets/img/foto2.jpg')}}" alt="" class="rounded-lg h-full w-full -z-20">
+        <img src="{{asset('assets/img/foto1.jpg')}}" alt="" class="rounded-lg h-full w-full brightness-50 -z-20">
+        <img src="{{asset('assets/img/foto2.jpg')}}" alt="" class="rounded-lg h-full w-full -z-20">
+        <img src="{{asset('assets/img/fotoKPMB.jpg')}}" alt="" class="rounded-lg h-full w-full -z-20">
 
     </div>
 
