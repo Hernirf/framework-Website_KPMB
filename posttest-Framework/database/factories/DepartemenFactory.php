@@ -16,8 +16,8 @@ class DepartemenFactory extends Factory
      */
     public function definition(): array
     {
-        return [
-            'nama_departemen' => fake()->randomElement(['KPSDM','Kesosmas','BUD','Eksternal','Kesekretariatan', 'Inti']),
-        ];
+        // return [
+        //     'nama_departemen' => fake()->randomElement(['KPSDM','Kesosmas','BUD','Eksternal','Kesekretariatan', 'Inti']),
+        // ];
     }
 }

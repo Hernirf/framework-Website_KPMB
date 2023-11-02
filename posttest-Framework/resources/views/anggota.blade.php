@@ -1,3 +1,4 @@
+
 @extends('layouts.global')
 
 @section('content')
@@ -10,7 +11,7 @@
                 <p class="text-4xl font-bold mb-4">Daftar Anggota KPMB</p>
                 <hr><br>
                 <div class="w-full h-auto flex justify-end">
-                    <button class="px-4 py-2 bg-green-600 rounded-md text text-white">Tambah</button>
+                    <a href="{{route('Anggota.add')}}"><button class="px-4 py-2 bg-green-600 rounded-md text text-white">Tambah</button></a>
                 </div><br>
                 <div class="relative overflow-x-auto">
                     <table class="w-full text-sm text-left text-gray-500">
@@ -40,11 +41,17 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @php
+                                $no = 1;
+                            @endphp
                             @foreach ($anggota as $anggo)
+
                                 <tr class="bg-white border-b">
+
                                     <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                       {{$anggo->id}}
+                                            {{$no ++}}
                                     </th>
+
                                     <td class="px-6 py-4">
                                         {{$anggo->ID_anggota}}
                                     </td>
@@ -58,22 +65,22 @@
                                     </td>
                                     <td class="px-6 py-4">
                                         {{$anggo->jabatan}}
-
                                     </td>
                                     <td class="px-6 py-4">
                                         {{$anggo->departemen->nama_departemen}}
-
                                     </td>
-                                    <td class="px-6 py-4 flex gap-8">
-                                        <div class="w-full h-auto">
-                                            <button class="px-4 py-2 bg-yellow-300 rounded-md text">Edit</button>
-
-                                            <button class="px-4 py-2 bg-red-600 rounded-md text text-white">Hapus</button>
-
+                                    <td class="px-6 py-4 flex ">
+                                        <div class="w-full h-auto flex flex-row gap-3">
+                                            <a href="{{route('Anggota.edit', $anggo->id)}}"><button class="px-4 py-2 bg-yellow-300 rounded-md text">Edit</button></a>
+                                            <form action="{{route('Anggota.delete', $anggo->id)}}" method="POST" class="">
+                                                @csrf
+                                                <button class="px-4 py-2 bg-red-600 rounded-md text text-white" onclick="return confirm('Are you sure want to delete?')">Hapus</button>
+                                            </form>
                                         </div>
                                     </td>
                                 </tr>
                             @endforeach
+
                         </tbody>
                     </table>
                 </div>

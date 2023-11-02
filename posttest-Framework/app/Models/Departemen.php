@@ -10,7 +10,7 @@ class Departemen extends Model
 {
     use HasFactory;
     protected $table = 'departemens';
-    protected $fillable = ['nama_departemen'];
+    protected $fillable = ['id', 'nama_departemen'];
 
     public function anggota(): HasMany
     {

@@ -46,9 +46,8 @@
             />
             <div>
               <h2
-                class="font-medium text-xs md:text-sm text-center text-teal-100"
-              >
-                Herni Suhartati
+                class="font-medium text-xs md:text-sm text-center text-teal-100">
+              {{ Auth::user()->name }}
               </h2>
               <p class="text-xs text-white text-center">Administrator</p>
             </div>
@@ -112,6 +111,20 @@
                 ></path>
               </svg>
               <span class="text-white">Anggota</span>
+            </a>
+
+            <a
+              href="{{route('logout')}}"
+              class="text-sm font-medium text-gray-700 py-2 px-2 hover:bg-blue-200 hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
+            >
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6 inline-block   fill-white"
+            viewBox="0 0 20 20"
+            fill="currentColor">
+                <path d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z"></path>
+            </svg>
+              <span class="text-white">Logout</span>
             </a>
           </div>
         </div>
