@@ -8,6 +8,15 @@
 ## LOGIN
 ![image](https://github.com/Hernirf/framework-Website_KPMB/assets/92102981/58c9d995-cf7e-4053-a351-693863aba82e)
 
+## SIGN UP
+![image](https://github.com/Hernirf/framework-Website_KPMB/assets/92102981/da4389ba-dcce-4406-b8c1-e985a8652c24)
+
+## Form Tambah Data
+![image](https://github.com/Hernirf/framework-Website_KPMB/assets/92102981/2535d796-d9d0-4f0b-a05d-f91675859c06)
+
+## Form Update Data
+![image](https://github.com/Hernirf/framework-Website_KPMB/assets/92102981/f60305d1-f80d-4c79-b35d-826b8f6f8a7f)
+
 ## DASHBOARD
 ![image](https://github.com/Hernirf/framework-Website_KPMB/assets/92102981/7248c9bf-c804-4f25-9abc-3af15281f93d)
 
