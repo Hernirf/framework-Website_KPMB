@@ -18,11 +18,16 @@
 ![image](https://github.com/Hernirf/framework-Website_KPMB/assets/92102981/f60305d1-f80d-4c79-b35d-826b8f6f8a7f)
 
 ## DASHBOARD
-![image](https://github.com/Hernirf/framework-Website_KPMB/assets/92102981/7248c9bf-c804-4f25-9abc-3af15281f93d)
+![image](https://github.com/Hernirf/framework-Website_KPMB/assets/92102981/e7b21216-ab15-4a00-9910-2d4586cd9b0e)
+
 
 ## DAFTAR ANGGOTA
-![image](https://github.com/Hernirf/framework-Website_KPMB/assets/92102981/b56de12e-d89c-4fb3-8d2b-77825c6269e9)
-![image](https://github.com/Hernirf/framework-Website_KPMB/assets/92102981/85158fe6-8834-4e6c-9397-81ca1ece15ef)
+
+![image](https://github.com/Hernirf/framework-Website_KPMB/assets/92102981/bdf5276c-95f2-4a15-be29-e7e19f520269)
+
+![image](https://github.com/Hernirf/framework-Website_KPMB/assets/92102981/4c4bfd3f-40d2-4387-9b17-eee1f5cc1e19)
+
+
 
 
 
