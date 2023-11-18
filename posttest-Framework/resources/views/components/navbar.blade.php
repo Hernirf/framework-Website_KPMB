@@ -2,11 +2,11 @@
     <a href="#" class= "">
         <img src="{{ asset('assets/img/Logo KPMB Samarinda.png') }}" alt="" class="w-fit h-14 ">
     </a>
-    <ul class="basis-1/2 flex flex-row gap-5 text-white justify-items-end px-24 ">
-        <li><a href="">About Us</a></li>
-        <li><a href="">Biro / Departemen</a></li>
-        <li><a href="">Dokumentasi</a></li>
-        <li><a href="">KPMB Mart</a></li>
+    <ul class="basis-1/2 flex flex-row gap-10 text-white justify-items-end px-24 ">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#depar">Biro / Departemen</a></li>
+        <li><a href="#dokumentasi">Dokumentasi</a></li>
+        {{-- <li><a href="#KPMB Mart">KPMB Mart</a></li> --}}
         <li class="px-5">
                 <button class=" top-4 justify-items-center px-1 py-2 text-center text-sm font-semibold text-black rounded-md absolute w-20 border-2 bg-blue-200" >
                   <a href="{{ route('login') }}">
@@ -14,6 +14,5 @@
                   </a>
                 </button>
         </li>
-
     </ul>
 </nav>

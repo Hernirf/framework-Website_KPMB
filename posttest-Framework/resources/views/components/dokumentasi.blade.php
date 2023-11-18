@@ -1,4 +1,4 @@
-<section>
+<section id="dokumentasi">
     <div class=" relative text-center -z-20">
         <h2 class="font-bold p-4 text-2xl text-blue-900">
             DOKUMENTASI

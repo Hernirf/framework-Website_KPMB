@@ -12,7 +12,7 @@
 
           <!-- Form -->
           <div class="mx-auto mb-4 max-w-[400px] pb-4">
-            <form  action="{{route('Anggota.update', $anggota->id)}}" method="POST">
+            <form  action="{{route('Anggota.update', $anggota->id)}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="w-full relative">
                     <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
@@ -70,6 +70,10 @@
                             <option value="{{$departement->id}}" {{$departement->id == $anggota->departemen_id ? 'selected':''}} >{{$departement->nama_departemen}}</option>
                         @endforeach
                     </select>
+                </div>
+                <div class="w-full relative mt-6">
+                    <label for="foto" class="text-white flex justify-start"> Upload Foto</label>
+                    <input type="file" name="foto" placeholder="Upload Foto..." class="w-full ps-12 pe-4  bg-slate-50 rounded-sm ring-1 ring-slate-300 focus:outline-none focus:ring-blue-500 " value="{{asset('assets/img/'. $anggota->foto)}}">
                 </div>
               <input type="submit" value="Edit" class="mt-10 inline-block w-full cursor-pointer items-center rounded-md bg-blue-900 px-6 py-3 text-center font-semibold text-white" />
             </form>

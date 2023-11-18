@@ -35,7 +35,7 @@
     @endif
     <div class="relative">
       <img alt="" src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9455fae6cf89_EnvelopeSimple.svg" class="absolute left-[5%] top-[26%] inline-block">
-      <input type="name" class="mb-4 block w-full border border-solid border-black bg-white align-middle text-[#333333] focus:border-[#3898ec] text-sm px-3 rounded-md h-9 py-6 pl-14" maxlength="256" name="username" placeholder="Username">
+      <input type="name" class="mb-4 block w-full border border-solid border-black bg-white align-middle text-[#333333] focus:border-[#3898ec] text-sm px-3 rounded-md h-9 py-6 pl-14" maxlength="256" name="Email" placeholder="Email">
 
     </div>
     <div class="relative mb-4">
@@ -49,10 +49,9 @@
       </div>
 
       <!-- Login Button -->
-      <div class="flex items-center px-40">
-      <button  class="bg-black hover:bg-blue-900 text-white font-semibold rounded-md py-2 px-4 w-60" type="submit">
+      <div class="flex items-start px-6">
+      <button  class="bg-black hover:bg-blue-900 text-white font-semibold rounded-md py-2 px-4 w-96" type="submit" >
         Sign Up </button>
-
       </div>
   </form>
 

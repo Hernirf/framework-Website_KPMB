@@ -17,9 +17,10 @@ return new class extends Migration
             $table->string('nama');
             $table->integer('angkatan');
             $table->string('jabatan');
+            $table->string('foto');
             $table->foreignId('departemen_id')->constrained();
             $table->timestamps();
-            
+
         });
     }
 

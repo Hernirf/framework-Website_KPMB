@@ -13,15 +13,16 @@ class AuthController extends Controller
 {
     public function SignUp(Request $request){
         if($request->password == $request->password_confirm){
-            $usernameAda = User::where("username", $request->username)->first();
+            $usernameAda = User::where("email", $request->email)->first();
             if($usernameAda){
                 session()->flash('error', 'Username sudah digunakan!');
                 return redirect('/register');
             }
             User::create([
                 'name' => $request->username,
-                'username' => $request->username,
+                'email' => $request->username,
                 'password' => Hash::make($request->password),
+                'role' => 2
             ]);
             session()->flash('success', 'Akun berhasil dibuat, silahkan login');
             return redirect('/register');
@@ -38,12 +39,12 @@ class AuthController extends Controller
 
     public function loginn(Request $request){
         $data = [
-            'username' => $request->username,
+            'email' => $request->email,
             'password' => $request->password,
         ];
 
         if(Auth::attempt($data)){
-            return redirect('/dashboard');
+            return redirect('/anggota');
 
         }
         else{

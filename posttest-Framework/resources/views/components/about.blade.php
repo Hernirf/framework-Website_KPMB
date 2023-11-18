@@ -1,4 +1,4 @@
-<section class="pb-20">
+<section class="pb-20" id="about">
     <div class="text-center h-80">
         <h2 class="font-bold p-4 text-2xl text-blue-900">
             ABOUS US

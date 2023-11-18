@@ -19,8 +19,9 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
-        'username',
+        'email',
         'password',
+        'role',
     ];
 
     /**
@@ -42,4 +43,19 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    const ROLE_ADMIN = 1;
+    const ROLE_USER = 2;
+
+    public function getRoleNameAttribute($value)
+    {
+        switch ($this->role) {
+            case self::ROLE_ADMIN:
+                return 'Admin';
+            case self::ROLE_USER:
+                return 'User';
+            default:
+                return null;
+        }
+    }
 }

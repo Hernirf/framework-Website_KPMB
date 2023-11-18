@@ -1,4 +1,4 @@
-<section class= "bg-gradient-to-tr from-blue-200 to-blue-900 items-center pb-12 -z-20">
+<section class= "bg-gradient-to-tr from-blue-200 to-blue-900 items-center pb-12 -z-20" id="depar">
     <div class=" text-center  ">
         <h2 class="font-bold p-4 text-2xl text-white ">
             BIRO & DEPARTEMEN

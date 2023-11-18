@@ -12,7 +12,7 @@ class Anggota extends Model
 {
     use HasFactory;
     protected $table = 'anggotas';
-    protected $fillable = ['ID_anggota', 'nama', 'angkatan', 'jabatan', 'departemen_id'];
+    protected $fillable = ['ID_anggota', 'nama', 'angkatan', 'jabatan', 'foto','departemen_id'];
 
     public function departemen(): BelongsTo
     {
